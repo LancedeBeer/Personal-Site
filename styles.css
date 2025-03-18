@@ -72,6 +72,14 @@
     margin-top: 10px;
   }
   
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+  }
+  
   .btn {
     background: var(--primary-color);
     color: #fff;
@@ -89,6 +97,28 @@
   .section {
     padding: 60px 20px;
     text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  button {
+    margin-top: 15px;
   }
   
   footer {
