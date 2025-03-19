@@ -6,11 +6,12 @@
   <title>Lance de Beer - Portfolio</title>
   <meta name="description" content="Portfolio of Lance de Beer - Logical Thinker, Problem Solver, and Data Enthusiast">
   <link rel="stylesheet" href="styles.css">
-  <script defer src="scripts/main.js"></script>
+  <script defer src="scripts/darkMode.js"></script>
+  <script defer src="scripts/navigation.js"></script>
+  <script defer src="scripts/contactForm.js"></script>
 </head>
 <body>
   <nav>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -19,43 +20,46 @@
       <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
     </ul>
   </nav>
+
   <header class="hero">
-    <img src="images/profile.webp" alt="Lance de Beer" class="profile-pic lazy-load">
-    <h1><span id="typing-effect">Lance de Beer</span></h1>
+    <img src="images/profile.webp" alt="Lance de Beer" class="profile-pic">
+    <h1>Lance de Beer</h1>
     <p>Logical Thinker | Problem Solver | Data Enthusiast</p>
     <button class="btn" onclick="scrollToSection('projects')">View Portfolio</button>
   </header>
-  <section class="section" id="about">
-    <h2>About Me</h2>
-    <p>Versatile professional with experience in database management, data analytics, and software development.</p>
-  </section>
-  <section class="section" id="projects">
-    <h2>Projects</h2>
-    <div class="filter-buttons">
-      <button onclick="filterProjects('all')">All</button>
-      <button onclick="filterProjects('web')">Web Development</button>
-      <button onclick="filterProjects('game')">Game Design</button>
-    </div>
-    <div id="project-list">
-      <p>Showcasing a variety of projects in programming, web development, and game design.</p>
-    </div>
-  </section>
-  <section class="section" id="resume">
-    <h2>Resume</h2>
-    <button class="btn" onclick="window.open('LP_de_Beer_CV.pdf', '_blank')">Download Resume</button>
-  </section>
-  <section class="section" id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </section>
+
+  <main>
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p>Versatile professional with experience in database management, data analytics, and software development.</p>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div id="project-list">
+        <p>Showcasing a variety of projects in programming, web development, and game design.</p>
+      </div>
+    </section>
+
+    <section class="section" id="resume">
+      <h2>Resume</h2>
+      <button class="btn" onclick="window.open('LP_de_Beer_CV.pdf', '_blank')">Download Resume</button>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
   <footer>
     <p>&copy; 2025 Lance de Beer | Connect on <a href="#">LinkedIn</a> & <a href="#">GitHub</a></p>
   </footer>
